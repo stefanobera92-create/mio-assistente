@@ -53,7 +53,7 @@ async function handleUpdate(update) {
     return tg("sendMessage", {
       chat_id: chatId,
       parse_mode: "HTML",
-      text: `👋 Il bot funziona!\n\nIl tuo ID Telegram è <code>${userId}</code>.\n\nPer attivarlo vai su Netlify → <b>Environment variables</b>, aggiungi <code>TELEGRAM_ALLOWED_IDS</code> con questo numero e rifai il deploy.`,
+      text: `👋 Ciao, sono Sky!\n\nIl tuo ID Telegram è <code>${userId}</code>.\n\nPer attivarlo vai su Netlify → <b>Environment variables</b>, aggiungi <code>TELEGRAM_ALLOWED_IDS</code> con questo numero e rifai il deploy.`,
     });
   }
   if (!allowed.includes(userId)) {
@@ -178,7 +178,7 @@ async function resoconto(chatId, state, perChi) {
   }
 }
 
-const AIUTO = `Ciao! Sono il tuo assistente 🤖
+const AIUTO = `Ciao! Sono Sky, il tuo assistente 🤖
 
 Scrivimi quello che vuoi, oppure mandami una **foto** (bolla, pianta, schermata…).
 

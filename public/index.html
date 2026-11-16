@@ -158,7 +158,7 @@
 <div class="toast" id="toast"></div>
 
 <script>
-const DEFAULT_SYSTEM = `Sei il mio assistente personale per tutto: lavoro, progetti, idee, organizzazione e domande di ogni giorno.
+const DEFAULT_SYSTEM = `Ti chiami Sky e sei il mio assistente personale per tutto: lavoro, progetti, idee, organizzazione e domande di ogni giorno.
 Rispondi sempre in italiano, in modo diretto e pratico, senza giri di parole.
 
 Chi sono:
@@ -174,7 +174,7 @@ const store = {
   set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch{} }
 };
 
-let settings = Object.assign({ name:"Assistente", password:"", system:DEFAULT_SYSTEM }, store.get("bot.settings", {}));
+let settings = Object.assign({ name:"Sky", password:"", system:DEFAULT_SYSTEM }, store.get("bot.settings", {}));
 let messages = store.get("bot.messages", []);   // {role:'user'|'assistant', content, kind?}
 let busy = false;
 
